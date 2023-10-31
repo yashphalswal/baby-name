@@ -8,40 +8,41 @@ using namespace std;
 int main() {
 
     cout << "hello" << endl;
-  
-    srand(static_cast<unsigned int>(std::time(nullptr));
 
-    std::vector<std::string> names = { "Isla", "Charlotte", "Sophie", "Lily", " Ava", "Aria", " Moana", "Ataahua", " Marama", " Kaia", "Willow", " Manaia"};
+    srand(static_cast<unsigned int>(time(nullptr)));
+
+    vector<string> names = { "Isla", "Charlotte", "Sophie", "Lily", " Ava", "Aria", " Moana", "Ataahua", " Marama", " Kaia", "Willow", " Manaia" };
 
     while (true) {
-        
-        std::cout << "Do you want a random name? (y/n): ";
+
+        cout << "Do you want a random name? (y/n): ";
         char choice;
-        std::cin >> choice;
+        cin >> choice;
 
         if (choice == 'n' || choice == 'N') {
-            std::cout << "Goodbye!" << std::endl;
-            break; 
+            cout << "Goodbye!" << endl;
+            break;
         }
         else if (choice == 'y' || choice == 'Y') {
-            
-            int randomIndex = std::rand() % names.size();
-            std::string randomName = names.at(randomIndex);
-            std::cout << "Random name: " << randomName << std::endl;
 
-           
-            std::cout << "Do you want another name? (y/n): ";
-            std::cin >> choice;
+            int randomIndex = rand() % names.size();
+            string randomName = names.at(randomIndex);
+            cout << "Random name: " << randomName << endl;
+
+
+            cout << "Do you want another name? (y/n): ";
+            cin >> choice;
 
             if (choice == 'n' || choice == 'N') {
-                std::cout << "Goodbye!" << std::endl;
-                break;  
+                cout << "Goodbye!" << endl;
+                break;
+            }
+            else {
+                cout << "Invalid choice. Please enter 'y' for a random name or 'n' to quit." << endl;
+            }
         }
-        else {
-            std::cout << "Invalid choice. Please enter 'y' for a random name or 'n' to quit." << std::endl;
-        }
-    }
 
+    }
     return 0;
 }
 
