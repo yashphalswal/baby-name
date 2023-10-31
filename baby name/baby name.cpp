@@ -6,8 +6,10 @@
 using namespace std;
 
 int main() {
+
+    cout << "hello" << endl;
   
-    std::srand(static_cast<unsigned int>(std::time(nullptr));
+    srand(static_cast<unsigned int>(std::time(nullptr));
 
     std::vector<std::string> names = { "Isla", "Charlotte", "Sophie", "Lily", " Ava", "Aria", " Moana", "Ataahua", " Marama", " Kaia", "Willow", " Manaia"};
 
