@@ -20,7 +20,7 @@ int main() {
         cin >> choice;
 
         if (choice == 'n' || choice == 'N') {
-            cout << "Goodbye!" << endl;
+            cout << "\t Goodbye!" << endl;
             break;
         }
         else if (choice == 'y' || choice == 'Y') {
